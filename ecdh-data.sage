@@ -58,7 +58,7 @@ base_G = from_stdAffPoint_to_PMNSJacPoint(std_affG, pmns_n, pmns_convbase_log2, 
 
 #The point at infinity is the only point with a Z-coordinate equal to 0
 #In Jacobian coordinates, it is represented by (1 : 1 : 0)
-INFTY_P = (ONE_rep, ONE_rep, ZERO_rep) #remmeber conv in Mont domain is done
+INFTY_P = (ONE_rep, ONE_rep, ZERO_rep) #remember conv in Mont domain is done
 
 ########################################################################
 ########################################################################
