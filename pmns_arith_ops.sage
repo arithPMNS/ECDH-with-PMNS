@@ -51,8 +51,6 @@ def pmns_comp_red_int(op, ri_mat, neg_iri_mat, iM_dom, phi, phi_log2):
 def equality_check(A, B, ri_mat, neg_iri_mat, iM_dom, phi, trans_v):
 	C = A - B 
 	red = pmns_trans_red_int(C, ri_mat, neg_iri_mat, iM_dom, phi, trans_v)
-	# ~ red = pmns_red_int(C, ri_mat, neg_iri_mat, iM_dom, phi)
-	# ~ print(red)
 	return (min(red) == max(red) == 0) 
 	
 ########################################################################
