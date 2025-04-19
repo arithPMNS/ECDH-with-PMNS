@@ -4,7 +4,7 @@
 
 #Note: pmns struct is [p, n, gmm, E, phi_log2, delta]
 
-pmns = [76884956397045344220809746629001649093037950200943055203735601445031516197751, 5, 36181054844448274924615137064228865317857967132027946769785381863627930216959, [1, -1, 0, 0, 0, 1], 64, 7]  # a pmns for the brainpoolP256t1 modulus
+pmns = [76884956397045344220809746629001649093037950200943055203735601445031516197751, 5, 36181054844448274924615137064228865317857967132027946769785381863627930216959, [1, -1, 0, 0, 0, 1], 64, 5]  # a pmns for the brainpoolP256t1 modulus
 
 #################### ELLIPTIC CURVE PARAMETERS #########################
 
@@ -25,7 +25,6 @@ ord_G = int("A9FB57DBA1EEA9BC3E660A909D838D718C397AA3B561A6F7901E0E82974856A7", 
 ZX.<x> = ZZ[] #or ZX.<X> = ZZ[]
 
 load("ecdh-data.sage")	#WARNING: must always be loaded after 'pmns' and elliptic curve parameters initialisations as above
-print(PMNS_is_on_curve(base_G, curve_A, curve_B, pmns_Mmat, pmns_iMmat, pmns_iM_dom, pmns_phi, pmns_E, pmns_transV, ZX))
 
 ############### The Diffie-Hellman protocol execution ##################
 
